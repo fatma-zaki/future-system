@@ -1,0 +1,31 @@
+.header {
+  background-color: #1a7c91;
+  padding: 60px 20px;
+  text-align: center;
+  color: #fff;
+  animation: slideInDown 1s ease;
+}
+
+.learn-more {
+  background-color: #0f5b66;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.learn-more:hover {
+  background-color: #137a8b;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,50 @@
+.contact {
+  background-color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+  color: #333;
+}
+
+.contact h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  animation: slideIn 1s ease;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border: 2px solid #1a7c91;
+  border-radius: 5px;
+}
+
+.bounce-button {
+  background-color: #1a7c91;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  animation: bounce 2s infinite;
+  transition: background-color 0.3s;
+}
+
+.bounce-button:hover {
+  background-color: #137a8b;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

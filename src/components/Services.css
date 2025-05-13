@@ -1,0 +1,32 @@
+.services {
+  padding: 50px 0;
+  background-color: #f0f4f8;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  width: 150px;
+  height: 150px;
+  background-color: #0f5b66;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.service-card:hover {
+  transform: rotate(5deg) scale(1.05); /* تقليل الدوران إلى 5 درجات فقط */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
