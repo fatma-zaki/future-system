@@ -6,7 +6,7 @@ const AboutUs = () => {
     <section id="about" className="bg-gradient-to-b from-white to-gray-100 py-16 px-6 md:px-20 font-sans" dir="rtl">
       <div className="max-w-7xl mx-auto grid gap-10 text-right">
         <div className="text-center">
-          <h2 className="text-6xl font-extrabold text-blue-700 mb-6">من نحن – Future System</h2>
+          <h2 className="text-4xl font-extrabold text-blue-700 mb-6">من نحن – Future System</h2>
           <p className="text-xl text-gray-800 max-w-4xl mx-auto leading-loose">
             في <strong className="text-blue-600">فيوتشر سيستم</strong>، نؤمن أن التكنولوجيا هي بوابة الأمان والراحة في الحياة الحديثة. نجمع بين الجودة، الابتكار، والدعم الحقيقي لنقدّم لك حلولًا تكنولوجية ذكية تلبي احتياجاتك.
           </p>
