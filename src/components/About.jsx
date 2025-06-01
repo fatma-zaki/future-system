@@ -1,4 +1,4 @@
-import "./about.css";
+
 import { FaCheckCircle, FaLaptop, FaShieldAlt, FaCogs } from "react-icons/fa";
 
 const AboutUs = () => {
