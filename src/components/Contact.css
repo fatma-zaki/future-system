@@ -22,12 +22,12 @@
 .contact input,
 .contact textarea {
   padding: 10px;
-  border: 2px solid #1a7c91;
+  border: 2px solid #165ee2;
   border-radius: 5px;
 }
 
 .bounce-button {
-  background-color: #1a7c91;
+  background-color: #165ee2;
   color: #fff;
   padding: 10px;
   border: none;
@@ -37,7 +37,7 @@
 }
 
 .bounce-button:hover {
-  background-color: #137a8b;
+  background-color: #165ee2;
 }
 
 @keyframes bounce {

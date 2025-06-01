@@ -1,5 +1,9 @@
 import "./Header.css";
+// import Swiper bundle with all modules installed
+import Swiper from 'swiper/bundle';
 
+// import styles bundle
+import 'swiper/css/bundle';
 const Header = () => {
   return (
     <header className="header slide-in">

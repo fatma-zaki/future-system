@@ -4,53 +4,96 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: #0f5b66;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 30px;
+  height: 70px;
+  background: rgba(68, 129, 243, 0.92);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  font-family: 'Poppins', sans-serif;
   position: sticky;
   top: 0;
   z-index: 1000;
-  font-family: 'Poppins', sans-serif;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #fff;
+.logo img {
+  width: 160px;
+  height: auto;
 }
 
 .nav-links {
-  list-style: none;
   display: flex;
   gap: 30px;
+  list-style: none;
 }
 
-.nav-links li {
-  position: relative;
-}
-
-.nav-links a {
+.nav-links li a {
   color: #fff;
   text-decoration: none;
-  font-weight: 400;
-  padding: 8px 15px;
-  transition: color 0.3s;
+  font-weight: 600;
+  font-size: 18px;
+  position: relative;
+  padding: 5px 8px;
+  transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
-  color: #1a7c91;
-}
-
-.nav-links a::after {
+.nav-links li a::after {
   content: "";
-  display: block;
-  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
   height: 2px;
-  background-color: #1a7c91;
-  transition: width 0.3s;
-  margin-top: 5px;
+  width: 0;
+  background: #fff;
+  transition: width 0.3s ease;
 }
 
-.nav-links a:hover::after {
+.nav-links li a:hover::after {
   width: 100%;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  width: 24px;
+  height: 3px;
+  background: #fff;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: rgba(68, 129, 243, 0.95);
+    flex-direction: column;
+    align-items: flex-start;
+    width: 220px;
+    padding: 20px;
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-links.open {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links li a {
+    font-size: 16px;
+    padding: 10px 0;
+  }
 }

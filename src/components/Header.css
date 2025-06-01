@@ -1,5 +1,12 @@
 .header {
-  background-color: #1a7c91;
+  position: absolute;
+  width: 300px;
+  z-index: 3;
+  border-radius: 10px;
+  background-color: rgba(22, 94, 226, 0.7);
+ top: 30%;
+ left: 50%;
+ transform: translate(-50%, -5%);
   padding: 60px 20px;
   text-align: center;
   color: #fff;
@@ -7,7 +14,7 @@
 }
 
 .learn-more {
-  background-color: #0f5b66;
+  background-color: rgba(22, 94, 226, 0.5);
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -16,7 +23,7 @@
 }
 
 .learn-more:hover {
-  background-color: #137a8b;
+  background-color: #165ee2;
 }
 
 @keyframes slideInDown {
