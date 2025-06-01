@@ -102,6 +102,9 @@ const serviceItems = [
   { category: "cashier", title: "كاشير", desc: "أنظمة نقاط البيع المتكاملة." },
   { category: "central", title: "سنترالات", desc: "أنظمة الاتصالات المركزية." },
   { category: "gates", title: "البوابات الالكترونية", desc: "أمان عالي من خلال بوابات حديثة." },
+  {
+    category: "Smart Home Systems", title: "Smart Home Systems", desc: "Automate your home with smart solutions."
+  }
 ];
 
 const Services = () => {
