@@ -31,9 +31,9 @@ export default () => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
     >
-      <SwiperSlide><img className='slideimg' src={img1}/></SwiperSlide>
-      <SwiperSlide><img className='slideimg' src={img2}/></SwiperSlide>
       <SwiperSlide><img className='slideimg' src={img3}/></SwiperSlide>
+      <SwiperSlide><img className='slideimg' src={img2}/></SwiperSlide>
+      <SwiperSlide><img className='slideimg' src={img1}/></SwiperSlide>
       <SwiperSlide><img className='slideimg' src={img4}/></SwiperSlide>
       ...
     </Swiper>
